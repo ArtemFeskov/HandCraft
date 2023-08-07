@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap');
 *{
     margin:  0;
     padding: 0;
 }
 
-body{
+/* body{
     background: #fff;
     color: black;
     font-family: 'Montserrat', "sans-serif";
@@ -18,50 +17,73 @@ body{
     background-blend-mode: multiply;
     background-color: #bcbcbc;
     position: relative;
+} */
+body{
+    background: #fff;
+    color: black;
+    font-family: 'Montserrat', "sans-serif";
+    font-weight: 300;
 }
-
 .wrapper{
-    width: 100%;
-    height: 100%;
+    width:100%;
+    margin: 50px auto;
 }
-
-.navbar{
-    position: sticky;
-    top:0;
-}
-
-
 
 
 header .logo{
-    padding: 20px 20px 20px 20px;
-    font-weight: 450;
+    padding: 20px 0px 20px 90px;
+    margin-left: 15%;
+    font-weight: 650;
     font-size: 40px;
     background-image: url('./img/HandCraftJpeg-removebg-preview.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-size: 60px;
     background-position: 20px;
-    text-indent: 60px;
     
+}
+header .presentation{
+    margin: 15%;
+    margin-top: 50px;
+    background: url('img/bac-transformed.jpeg');
+    width: 70%;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply; 
+    background-color: #bcbcbc;
+    position: relative;
+}
+header .presentation::after{
+    content: 'The best kitchen for your house';
+    position: absolute;
+    top: 75px;
+    left: 70px;
+    width: 300px;
+    font-size: 40px;
+    font-weight: 800;
+    color: #fff;
 }
 header ul.nav{
     float: right;
     list-style: none;
+    margin: 15px;
+    margin-right: 15%;
 }
 header ul.nav li {
     display: inline;
     margin-left: 25px;
     cursor: pointer;
+    transition: opacity 300ms ease;
 }
 header ul.nav li:hover{
     opacity: 0.5;
-}
+} 
 
 
 
 footer{
-    margin-top: 2%;
+    margin-top: 7%;
     text-align: center;  
     font-size: 10px;  
     background-color: rgba(0, 0, 0, 0.199);
@@ -75,14 +97,17 @@ footer .footerBottom{
     justify-content: center;
     text-indent: 10px;
 }
+footer .urlOfCreater{
+    color: #fff;
+}
 footer .urlOfCreater:hover{
     
     opacity: 0.5;
     cursor: pointer;
-}
+}  
 
 
 
 /* header .presentation::after{
    content: '';
-} */
+}*/

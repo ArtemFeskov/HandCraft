@@ -3,8 +3,8 @@ import React from 'react'
 export default function Header() {
   return (
     <header>
-        <div>
-           <div className='logo'> HANDCRAFT</div>
+        <div >
+           <span className='logo'> HANDCRAFT </span>
            <ul className='nav'>
             <li>Home</li>
             <li>Gallery</li>
